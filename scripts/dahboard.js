@@ -25,6 +25,7 @@ function append(){
 
      div.append(img,name,course,unit,batch,btn)
      container.append(div);
+     
     });
    
 }
@@ -49,6 +50,7 @@ function remove(index)
     });
     localStorage.setItem("students",JSON.stringify(newData));
     append();
+    location.reload()
 
   
 }
